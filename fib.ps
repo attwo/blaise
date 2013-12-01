@@ -1,0 +1,18 @@
+program fib;
+
+var i,j;
+
+function fib(i);
+begin
+    if i = 0 then
+        fib := 0
+    else if i < 3 then
+        fib := 1
+    else
+        fib := fib(i-1) + fib(i-2);
+end;
+
+begin
+    for i := 1 to 7 do
+        writeln(fib(i));
+end.
